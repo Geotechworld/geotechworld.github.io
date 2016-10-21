@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+	<meta charset="utf-8" />
+    <link href="styles/homestyle.css" rel="stylesheet" />
+<script src="scripts/main.js" type="text/javascript"> </script>
+</head>
+<body>
+    <!--<form name="form1">
+        <input type="Text" name="ee" id="text1" value="ahmed"/>
+    </form>-->
+    <!--*************************جافا سكريبت تجرربة ****************************->
+        <script type="text/javascript" >
+            var getname = document.getElementById("text1");
+            var tt = getname.value;
+        document.write(tt);
+        alert("I'm learning javascript too!");
+    </script>
+        <!--****************************************************-->
+    <nav class="container">
+ <a href="index.html"> Home </a>
+ <a href="about.html"> About </a>
+   </nav>
+    <header class="container">
+        <h1>Contosoconf</h1>
+        <p>A Two Track conference on the latest html5 development </p>
+    </header>
+    <section class="container">
+        <p>
+            The web keeps evolving . THere's a wealth of new technologies to keep up with ! contosoConf is an in-depth exploration of html5 , css3 and javascript , in the heart of seattle .
+        </p>
+        <p>
+            Don't miss the best speakers in the bisness talking about the future of the web .
+        </p>
+    </section>
+    <section class="container">
+        <h2> Featuring These excellent speakers</h2>
+        <ul>
+            <li>
+                <img src="images/speakers/1.jpg" />Melissa Kerm </li>
+            <li>
+                <img src="images/speakers/2.jpg" />Daved Alexander </li>
+            <li>
+                <img src="images/speakers/3.jpg" />Mark hanson </li>
+            <li>
+                <img src="images/speakers/4.jpg" />April Meyer </li>
+        </ul>
+    </section>
+    <section class="container">
+        <h2> Thanx to our Sponsors</h2>
+        <ul>
+            <li>
+                <img src="images/sponsors/10.jpg" />Trey research </li>
+            <li>
+                <img src="images/sponsors/21.jpg" />litore Inc </li>
+            <li>
+                <img src="images/sponsors/12.jpg" />Fourth Coffee </li>
+            <li>
+                <img src="images/sponsors/16.jpg" />Graphic Design insitute  </li>
+        </ul>
+    </section>
+    <footer class="container">
+        <p>
+            Hosted by Contoso
+        </p>
+        <p>
+            Conference center </br>
+            3 somewhere</br>
+            Seattle 
+        </p>
+        <p>
+            @ 2012 contoso
+        </p>
+    </footer>
+
+<!-- HTML Markup for VenueList -->
+<ul id="VenueList">
+<li>Room A</li>
+<li>Room B</li>
+</ul>
+<script>
+// JavaScript code to modify the items in VenueList
+var list = document.getElementById("VenueList");
+// Create a new venue
+var newItem = document.createElement("li");
+newItem.textContent = "Room C";
+// Add the new venue to the end of VenueList
+list.appendChild(newItem);
+</script>
+
+<form>
+<p>
+<label>Write Your Name:
+<input type="text" id="NameBox" /></label></p>
+<input type="button" id="submit" value="Click to submit" />
+</form>
+<div id="thankYouArea"></div>
+<script type="text/javascript">
+function sayThankYou() {
+var userName = document.getElementById("NameBox").value;
+var thankYou = document.createElement("p");
+thankYou.textContent = "Thank you " + userName;
+document.getElementById("thankYouArea").appendChild(thankYou);
+}
+document.getElementById("submit").addEventListener("click", sayThankYou);
+var dbc = Driver={ODBC Driver 13 for SQL Server};Server=tcp:geometric.database.windows.net,1433;Database=skart;Uid=GT@geometric;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;
+</script>
+    
+   
+    </body>
+</html>
