@@ -1,0 +1,22 @@
+﻿/*
+    RESET
+*/
+* { margin: 0; padding: 0; }
+body { font: 14px/1.1 Helvetica, Sans-Serif;
+ background: url(images/back.jpg) repeat-x; }
+.clear { clear: both; }
+img, a img { border: none; }
+input { outline: none; }
+
+/***************************************************/
+a {
+color:black;
+padding:1rem;
+border-left:0px solid white;
+margin:1rem;}
+/***************************************************/
+nav{
+background-color:white;
+line-height:6rem;
+font-size:1.7rem;}
+/***************************************************/
