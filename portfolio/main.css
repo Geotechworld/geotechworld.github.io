@@ -1,0 +1,22 @@
+h2
+{
+  background-color:#668796;
+  color:#ffffff;
+  //font-size : 50px;
+  //font-weight : bolder;
+}
+.title 
+{
+  font-size :45px;
+  //font-weight : bolder;
+}
+strong
+{
+//font-size: 50px;
+  //color:rgba(59, 118, 226, 0.83);
+  //font-weight : bolder;
+}
+p{
+  font-size: 24px;
+  font-weight: bold;
+}
