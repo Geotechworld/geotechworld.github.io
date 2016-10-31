@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Web Portfolio of GT</title>
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
   <link rel="stylesheet" href="main.css">
 </head>
@@ -19,11 +20,19 @@
     </div>
   </div>
 <div class="container">
-  <h1 class="title">Web Portfolio of <strong>GT</strong></h1>
-  <h2 >Welcome<strong>!</strong></h2>
-  <p>GT ( Geometric Technologies corporation ) is a special Information Technology Company </p> 
-  <img src ="images/logo30.png" alt="GT LOGO" width = 50%>
-  <p> A Shamy :-) </p>
+    <h1 class="title">Web Portfolio of <strong>GT</strong></h1>
+  </div>
+
+  <button class="w3-btn" onclick="document.getElementbyid('id01').style.display='block'">Welcome! Click Me 
+  </button>
+  
+<div id="id01" class="w3-container w3-red" style="display:none">
+  <span onclick="this.parentElement.style.display='none'" class="w3-closebtn">x</span>
+  <p>GT ( Geometric Technologies corporation ) is a special Information Technology Company
+  </p> 
 </div>
+ <!-- <img src ="images/logo30.png" alt="GT LOGO" width = 50%>-->
+  <p> A Shamy :-) </p>
 </body>
 </html>
+
