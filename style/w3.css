@@ -3,12 +3,14 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
 /******************************************/
 
+/*******************************************/
+
 ul.sidenav {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 25%;
-    background-color: #f1f1f1;
+    background-color: #333;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -16,7 +18,7 @@ ul.sidenav {
 
 ul.sidenav li a {
     display: block;
-    color: #000;
+    color: #fff;
     padding: 8px 16px;
     text-decoration: none;
 }
@@ -27,7 +29,7 @@ ul.sidenav li a.active {
 }
 
 ul.sidenav li a:hover:not(.active) {
-    background-color: #555;
+    background-color: #7b7878;
     color: white;
 }
 
@@ -54,6 +56,8 @@ div.content {
     ul.sidenav li a {
         text-align: center;
         float: none;
+      font-weight:bolder;
+      font-size:40px;
     }
 }
 /*************************************************/
