@@ -26,13 +26,30 @@
     position:relative;
     float:lef;
     border:solid;border-color:#908686;">
-<ul>
-  <li><a href="#">h</a></li></ul>
+
+<p>Please input a number between 5 and 10:</p>
+
+<input id="demo" onchange="myFunction()" type="text"  >
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="message"></p>
+
 <script>
-
-var s =[];
-
-
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+        if(x == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5) throw "too low";
+        if(x > 10) throw "too high";
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
 </script>
 </div>
 <!--******************************************-->
