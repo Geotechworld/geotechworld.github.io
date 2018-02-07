@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ClinicMaster.jnlp">
+  <information>
+    <title>ClinicMaster</title>
+    <vendor>GT</vendor>
+    <description>clinic master is a smart clinic software</description>
+    <offline-allowed/>
+  <shortcut><desktop/></shortcut>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ClinicMaster.jar" size="18015442" download="eager" />
+    <jar href="lib\TrayNotification.jar" size="41958" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1228611" download="eager" />
+    <jar href="lib\derby.jar" size="4545875" download="eager" />
+    <jar href="lib\jfoenix-1.2.0.jar" size="2363910" download="eager" />
+    <jar href="lib\jxl.jar" size="735343" download="eager" />
+  </resources>
+<security>
+  <all-permissions/>
+</security>
+  <applet-desc  width="1300" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ClinicMaster" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="1300" height="600" main-class="homepage.homepageloader"  name="ClinicMaster" />
+  <update check="always"/>
+</jnlp>
