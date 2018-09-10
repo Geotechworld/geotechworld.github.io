@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <html>
+<head>
+<script>
+
+$(function() {
+    $('.submit').click(function() {
+        $('#registerform').submit();
+        return false;
+    }); 
+});	   
+
+</script>
+</head>
 <title>Geometric Institution for Technologies</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -74,6 +86,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 GT is headquartered in Cairo with offices in Damietta , Aswan 
 	</p>
+	<div>
+	<iframe width="100%" height="315" src="https://www.youtube.com/embed/sXMuK8Z3jyQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      
+	</div>
     <h3 class="w3-padding-16 w3-text-light-grey">We Offer</h3>
     <p class="w3-wide">Programming</p>
     <div class="w3-white">
@@ -230,12 +246,13 @@ GT is headquartered in Cairo with offices in Damietta , Aswan
         <img src="img/slide00.png" style="width:100%">
         <img src="img/serv1.jpg" style="width:100%">
         <img src="img/serv5.png" style="width:100%">
-      </div>
+		<img src="img/slide6.jpg" style="width:100%">
+		</div>
 
       <div class="w3-half">
         <img src="img/serv2.jpg" style="width:100%">
         <img src="img/serv3.jpg" style="width:100%">
-        <img src="img/slide6.jpg" style="width:100%">
+        
         <img src="img/serv4.jpg" style="width:100%">
       </div>
     <!-- End photo grid -->
@@ -249,19 +266,32 @@ GT is headquartered in Cairo with offices in Damietta , Aswan
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Damietta, Egypt</p>
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Egypt</p>
       <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +20 1033068004</p>
       <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: geotechonline.org@gmail.com.com</p>
     </div><br>
     <p>Lets get in touch. Send us a message:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Address" required name="Address"></p>
-      <p><input class="w3-input w3-padding-16" type="number" placeholder="Mobile" required name="Mobile"></p>
-      <p><input class="w3-input w3-padding-16" type="date" placeholder="Date OF Birth" required name="DOB"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+				   
+    <form id="registerform"action="https://docs.google.com/forms/d/e/1FAIpQLSemUw_GT0j1mReWs2TblVNMXJTqyTz34h5n65FCduwdj_osQw/formResponse" target="_blank" method="POST">
+      
+	  <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="entry.54272485"></p>
+      <p><input class="w3-input w3-padding-16" type="date" placeholder="Date OF Birth" required name="entry.2147234292"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="Mobile" required name="entry.1545413064"></p>
+       <input list="City" class="w3-input w3-padding-16" placeholder="City" required name="entry.576839647">
+	  <datalist id="City">
+  
+		<option value="دمياط القديم">
+		<option value="دمياط الجديدة">
+		<option value="راس البر">
+		<option value="فارسكور">
+		<option value="الزرقا">
+		<option value="كفر سعد">
+		<option value="عزبة البرج">
+		<option value="كفر البطيخ">
+		<option value="أخري">
+		
+	  </datalist>
+	  <p><input class="w3-input w3-padding-16" type="text" placeholder="Qualification" required name="entry.1062816849"></p>
       <p>
         <button class="w3-button w3-light-grey w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
@@ -274,11 +304,7 @@ GT is headquartered in Cairo with offices in Damietta , Aswan
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
     <a   href="https://www.facebook.com/pg/GeoOracle/" target="_blank"> <i class="fa fa-facebook-official w3-hover-opacity"> </i></a>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a   href="https://www.youtube.com/channel/UCeDplYcTD8qMv0XKK16t3mQ" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i> </a>
     <p class="w3-medium">Powered by <a   class="w3-hover-text-green">Geo.Tech</a></p>
   <!-- End footer -->
   </footer>
@@ -288,4 +314,3 @@ GT is headquartered in Cairo with offices in Damietta , Aswan
 
 </body>
 </html>
-
